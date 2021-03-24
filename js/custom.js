@@ -151,12 +151,13 @@ $(function () {
 				const contactTexts = ["Contact Us", "Contact", "Contact Now"].map(a => a.toLowerCase())
 				const seemoreTexts = ["See More", "Our Services"].map(a => a.toLowerCase())
 				const aboutUsTexts = ["About us", "Our History"].map(a => a.toLowerCase())
+
 				if (contactTexts.includes(str)) {
-					window.location = "/contact.html"
+					location.href = "contact.html"
 				} else if (seemoreTexts.includes(str)) {
-					window.location = "/gallery.html"
+					location.href = "gallery.html"
 				} else if (aboutUsTexts.includes(str)) {
-					window.location = "/about.html"
+					location.href = "about.html"
 				}
 			}
 		});
