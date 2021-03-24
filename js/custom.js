@@ -132,7 +132,7 @@ $(function () {
 
 
 	$(document).ready(function(){
-		const imgs = document.getElementsByTagName("img");
+		const imgs = [...document.getElementsByTagName("img")]
 		imgs.map(img => img.src = img.src.toLowerCase())
 
 		let elems = [...document.getElementsByClassName("buy_bt")]
